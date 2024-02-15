@@ -60,7 +60,7 @@ En la línea de comandos (terminal)
 - Se ejecutarán 2 contenedores: uno con PHP-Apache y otro con MySQL.
 - Todos los archivos del sitio web van en el directorio `www`.
 - Los archivos de la base de datos son almacenados en el directorio `dbdata`. Esto permite que la información sea persistente cuando se reinicie el contenedor.
-  - Para reiniciar con una base de datos nueva, solamente elimina el directorio `dbdata`.
+  - Para reiniciar con una base de datos nueva, solamente elimina el contenido del directorio `dbdata`.
 
 ### Extensiones PHP
 Para agregar más extensiones PHP, agrega el paquete a instalar en la lista de paquetes después de la línea 'apt-get install' (agrégalos en orden alfabético).
