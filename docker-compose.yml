@@ -1,0 +1,29 @@
+version: "3.8"
+services:
+  php-apache:
+    build:
+      context: .
+    depends_on:
+      - "mysql"
+    ports:
+      - 80:80
+    volumes:
+      - "./www:/var/www/html/"
+      - "./uploads.ini:/usr/local/etc/php/conf.d/uploads.ini"
+
+  mysql:
+    image: "mysql:8.0.27"
+    # Uncomment line below if you are using a Mac with the M1 chip
+    platform: linux/amd64
+    volumes:
+      - "./mysql_seed.sql:/docker-entrypoint-initdb.d/mysql_seed.sql"
+      - "./dbdata:/var/lib/mysql"
+    command: 
+      - "--default-authentication-plugin=mysql_native_password"
+    ports:
+      - 3306:3306
+    environment:
+      MYSQL_ROOT_PASSWORD: "ro07P4s5w0rD"
+      MYSQL_DATABASE: "db_api"
+      MYSQL_USER: "usr_api"
+      MYSQL_PASSWORD: "4pI_p45s"
