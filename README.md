@@ -12,8 +12,8 @@ Para validar que el contenedor esté corriendo, puedes acceder a http://127.0.0.
 
 ## Ejecutar las imágenes de Docker
 En la línea de comandos (terminal)
-- Crea una nueva rama de este repositorio en cualquier directorio / carpeta.
-  - `git clone `
+- Descarga este repositorio en cualquier directorio / carpeta.
+  - `git clone https://github.com/osegura01/api_test.git`
 - Entra al directorio.
   - `cd api_test`
 - Crea un directorio llamado `dbdata`, ahí se almacenará la información de la base de datos.
