@@ -24,7 +24,7 @@ En la línea de comandos (terminal)
   MYSQL_ROOT_PASSWORD: "ro07P4s5w0rD"
   MYSQL_DATABASE: "db_api"
   MYSQL_USER: "usr_api"
-  MYSQL_PASSWORD: "4pI_p45s"
+  MYSQL_PASSWORD: "4pI_p45s
 ```
 
 - Inicia el contenedor
