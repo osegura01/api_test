@@ -4,7 +4,7 @@ Docker con: Apache, PHP, MySQL
 
 El conjunto de imágenes crea un contenedor que ejecuta: Apache (servidor web), MySQL y PHP.
 
-Para validar que el contenedor esté corriendo, puedes acceder a http://127.0.0.1 or http://localhost, lo cual debería mostrar la página index.html
+Para validar que el contenedor esté corriendo, puedes acceder a http://127.0.0.1 o http://localhost, lo cual debería mostrar la página index.html
 
 ## Pre requisitos
 - Instalar y ejecutar Docker Desktop
